@@ -1,0 +1,14 @@
+{
+  "version": "controlled-english-v2",
+  "language": "en",
+  "artifact_nouns": ["artifact", "copy", "package", "backup"],
+  "usability_adjectives": ["usable", "available", "accessible"],
+  "temperature_phrases": ["is running at", "runs at", "operates at", "temperature reads"],
+  "unit_aliases": {
+    "celsius": "C", "degree celsius": "C", "degrees celsius": "C", "°c": "C",
+    "fahrenheit": "F", "degree fahrenheit": "F", "degrees fahrenheit": "F", "°f": "F",
+    "kelvin": "K", "kelvins": "K"
+  },
+  "unsupported_markers": ["might", "maybe", "possibly", "if", "unless", "probably", "could", "may", "reportedly", "reported", "said", "claims", "previously", "formerly"],
+  "unresolved_subjects": ["it", "they", "this", "that", "someone", "something"]
+}

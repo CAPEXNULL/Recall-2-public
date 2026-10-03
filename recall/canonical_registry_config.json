@@ -1,0 +1,182 @@
+{
+  "version": "maintenance-semantics-v1",
+  "provenance": "config",
+  "identity": {
+    "normalization": "NFC/trim/casefold",
+    "collision": "UNKNOWN"
+  },
+  "datetime": {
+    "timezone": null
+  },
+  "boolean": {
+    "type": "strict",
+    "unsupported": "UNKNOWN"
+  },
+  "entities": [
+    {
+      "id": "GLOBAL",
+      "kind": "global",
+      "aliases": []
+    }
+  ],
+  "roles": [
+    {
+      "id": "current_node",
+      "meaning": "Node explicitly identified as the current node in the maintenance context",
+      "entity_kind": "node"
+    },
+    {
+      "id": "current_service",
+      "meaning": "Service explicitly identified as the current service in the maintenance context",
+      "entity_kind": "service"
+    },
+    {
+      "id": "current_certificate",
+      "meaning": "Certificate explicitly identified as the current certificate in the maintenance context",
+      "entity_kind": "certificate"
+    },
+    {
+      "id": "current_route",
+      "meaning": "Route explicitly identified as the current route in the maintenance context",
+      "entity_kind": "route"
+    }
+  ],
+  "relations": [
+    {
+      "id": "isolation_control_available",
+      "meaning": "Isolation control is available for the subject node",
+      "value_type": "boolean",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "temperature",
+      "meaning": "Observed operating temperature of the subject entity",
+      "value_type": "number",
+      "unit": "C",
+      "dimension": "temperature",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "region",
+      "meaning": "Region in which the subject node is located",
+      "value_type": "string/entity",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "approved_isolation_regions",
+      "meaning": "Explicit complete set of approved isolation regions",
+      "value_type": "set/list",
+      "subject_scope": "global",
+      "scope_entity": "GLOBAL",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "isolation_authorization_valid_until",
+      "meaning": "Expiration datetime of isolation authorization for the subject node",
+      "value_type": "datetime",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "compatible_destination_available",
+      "meaning": "A compatible migration destination is available for the subject service",
+      "value_type": "boolean",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "quota_used_percent",
+      "meaning": "Percentage points of migration quota used by the subject service",
+      "value_type": "number",
+      "unit": "percent",
+      "dimension": "percentage_points",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "zone",
+      "meaning": "Assigned migration zone of the subject service",
+      "value_type": "string/entity",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "allowed_migration_zones",
+      "meaning": "Explicit complete set of allowed migration zones",
+      "value_type": "set/list",
+      "subject_scope": "global",
+      "scope_entity": "GLOBAL",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "migration_token_valid_until",
+      "meaning": "Expiration datetime of migration token for the subject service",
+      "value_type": "datetime",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "renewal_permitted",
+      "meaning": "Renewal of the subject certificate is explicitly permitted",
+      "value_type": "boolean",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "days_remaining",
+      "meaning": "Time remaining before the subject certificate expires; retain the source duration unit",
+      "value_type": "number",
+      "unit": "day",
+      "dimension": "duration",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "issuer_class",
+      "meaning": "Issuer class of the subject certificate",
+      "value_type": "string/entity",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "accepted_issuer_classes",
+      "meaning": "Explicit complete set of accepted issuer classes",
+      "value_type": "set/list",
+      "subject_scope": "global",
+      "scope_entity": "GLOBAL",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "renewal_window_opened_at",
+      "meaning": "Datetime at which the renewal request window opened for the subject certificate",
+      "value_type": "datetime",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "standby_path_ready",
+      "meaning": "A standby path is ready for the subject route",
+      "value_type": "boolean",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "load_percent",
+      "meaning": "Percentage points of load carried by the subject route",
+      "value_type": "number",
+      "unit": "percent",
+      "dimension": "percentage_points",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "path_class",
+      "meaning": "Assigned path class of the subject route",
+      "value_type": "string/entity",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "permitted_path_classes",
+      "meaning": "Explicit complete set of permitted path classes",
+      "value_type": "set/list",
+      "subject_scope": "global",
+      "scope_entity": "GLOBAL",
+      "semantic_class": "PROPERTY"
+    },
+    {
+      "id": "health_observed_at",
+      "meaning": "Datetime of the route health observation",
+      "value_type": "datetime",
+      "semantic_class": "PROPERTY"
+    }
+  ]
+}

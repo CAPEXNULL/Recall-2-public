@@ -1,0 +1,12 @@
+{
+  "version": "pers-a-v2",
+  "model_id": "NousResearch/Hermes-4-405B",
+  "technical_params": {},
+  "temperature": 0,
+  "top_p": 1,
+  "max_tokens": 4096,
+  "timeout_seconds": 45,
+  "retry_count": 0,
+  "selection_basis": "Prior Model Capability Comparison: highest correct count and 18/18 verifier-only; new pipeline capability still must be measured",
+  "state_validation": "deterministic_source_grammar"
+}
