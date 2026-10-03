@@ -1,0 +1,22 @@
+{
+  "version": "controlled-english-syntax-v3",
+  "language": "en",
+  "nominal_heads": {
+    "backup": "material", "artifact": "material", "copy": "material", "package": "material",
+    "resource": "capacity", "worker": "capacity", "executor": "capacity"
+  },
+  "classes": {"material": ["available"], "capacity": ["ready"]},
+  "states": {
+    "available": {"relation": "available", "value": true},
+    "usable": {"relation": "available", "value": true},
+    "accessible": {"relation": "available", "value": true},
+    "unavailable": {"relation": "available", "value": false},
+    "unusable": {"relation": "available", "value": false},
+    "inaccessible": {"relation": "available", "value": false},
+    "ready": {"relation": "ready", "value": true},
+    "unready": {"relation": "ready", "value": false}
+  },
+  "numeric_properties": {"temperature": {"relation": "temperature", "value_type": "number"}},
+  "unresolved_targets": ["it", "they", "this", "that", "someone", "something", "either", "both"],
+  "qualification_semantics": "Nominal states qualify the head. Explicit predicate gives current assertion; existence asserts qualified presence. Unknown classes/states and mixed relations are unsupported."
+}

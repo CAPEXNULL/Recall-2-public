@@ -1,0 +1,16 @@
+{
+  "situation_a": "After the update, service Alpha responds slowly and the request queue is growing. Rollback is available.",
+  "outcome": {
+    "success": true,
+    "score": 0.8,
+    "feedback": "Simulated outcome: response times improved and the queue stopped growing after the action."
+  },
+  "situation_b": "After the update, service Beta responds slowly and the request queue is growing. Rollback is available.",
+  "expected": {
+    "first_source": "MODEL",
+    "second_source": "EXPERIENCE",
+    "minimum_similarity": 0.5,
+    "model_calls": 1
+  },
+  "note": "Demonstration uses a simulated operational situation and explicitly user-reported outcome; no infrastructure action is executed. The second service is new to session history."
+}

@@ -1,0 +1,24 @@
+{
+  "version": "controlled-english-v1",
+  "language": "en",
+  "numeric_tolerance": 1e-9,
+  "units": {
+    "C": ["temperature", 1, 273.15], "K": ["temperature", 1, 0],
+    "F": ["temperature", 0.5555555555555556, 255.3722222222222],
+    "s": ["duration", 1, 0], "min": ["duration", 60, 0], "h": ["duration", 3600, 0],
+    "B": ["bytes", 1, 0], "KB": ["bytes", 1000, 0], "MB": ["bytes", 1000000, 0]
+  },
+  "boolean_relations": {
+    "available": {"true": ["is available", "can be used", "is ready"], "false": ["is unavailable", "cannot be used", "is missing"]},
+    "permitted": {"true": ["is permitted", "is allowed", "is not forbidden"], "false": ["is forbidden", "is prohibited", "is not permitted"]},
+    "compatible": {"true": ["is compatible", "remains compatible"], "false": ["is incompatible", "is not compatible"]}
+  },
+  "value_relations": {
+    "temperature": {"type": "number", "phrases": ["temperature is", "temperature measures", "has temperature"]},
+    "observed_at": {"type": "datetime", "phrases": ["was observed at", "was checked at", "observation time is"]},
+    "updated_at": {"type": "datetime", "phrases": ["was updated at", "update time is"]},
+    "allowed_regions": {"type": "set/list", "phrases": ["allowed regions are", "supports regions", "permitted regions are"]},
+    "region": {"type": "string/entity", "phrases": ["region is", "belongs to region", "is located in"]}
+  },
+  "target_phrases": ["target is", "current target is", "this operation concerns", "apply the operation to"]
+}
