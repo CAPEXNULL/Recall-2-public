@@ -49,4 +49,4 @@ The current deterministic semantic stage passed the existing 32 development scen
 
 ## License and submission
 
-MIT; see [LICENSE](LICENSE). A public repository, deployed working demo, video and Devpost submission still need their actual published URLs. Preparing this source package alone does not complete the competition submission.
+MIT; see [LICENSE](LICENSE). Public repository: https://github.com/CAPEXNULL/Recall-2-public. A deployed working demo, video and Devpost submission still need their actual published URLs. Publishing this repository alone does not complete the competition submission.
